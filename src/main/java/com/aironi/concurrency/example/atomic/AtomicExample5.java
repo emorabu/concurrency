@@ -18,12 +18,12 @@ public class AtomicExample5 {
 	public static void main(String[] args) {
 		AtomicExample5 example5 = new AtomicExample5();
 		if (updater.compareAndSet(example5, 100, 200)) {
-			LOGGER.info("success count:" + example5.getCount());
+			LOGGER.info("success count:" + example5.getCount()); // 200
 		}
 		if (updater.compareAndSet(example5, 100, 200)) {
 			LOGGER.info("success count:" + example5.getCount());
 		} else {
-			LOGGER.info("fail count:" + example5.getCount());
+			LOGGER.info("fail count:" + example5.getCount()); // 200
 		}
 	}
 
