@@ -11,7 +11,7 @@ import java.lang.annotation.Target;
  *
  */
 @Target(ElementType.TYPE) // 该注解要添加到类上
-@Retention(RetentionPolicy.SOURCE) // 注解范围, SOURCE: 编译期将被忽略; RUNTIME: 该注解将编译到class文件中,并保留在JVM运行时
+@Retention(RetentionPolicy.SOURCE) // 注解范围, SOURCE: 编译器将忽略; RUNTIME: 该注解将编译到class文件中,并保留在JVM运行时
 public @interface ThreadSafe {
 
 	String value() default "";

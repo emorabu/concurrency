@@ -10,7 +10,7 @@ public class SyncExample1 {
 	private static final Logger LOGGER = LoggerFactory.getLogger(SyncExample1.class);
 
 	public static void main(String[] args) {
-//		invoke1();
+		invoke1();
 //		invoke2();
 	}
 
