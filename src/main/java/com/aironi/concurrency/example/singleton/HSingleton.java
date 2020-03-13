@@ -11,7 +11,10 @@ public class HSingleton {
 			System.out.println("-------");
 		}
 	}
+	static {
+		System.out.println(1);
+	}
 	public static void main(String[] args) {
-		HSingleton.getInstance();
+	//	HSingleton.getInstance();
 	}
 }
